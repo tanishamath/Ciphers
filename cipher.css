@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(rgb(37, 9, 52), rgb(0, 0, 0));
+    background-image: url(peakpx.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    
+        font-family: "Major Mono Display", monospace;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+}
+
+
+.dropdown-menu {
+    
+    border-radius: 5px;
+    
+}
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+}
+.dropdown-item:hover {
+    background-color: #200e2b;
+}
+.dropdown-item.text {
+    color: #8437e1;
+}
+.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+.btn-dark:hover {
+    background-color: #4c637b;
+    border-color: #1d2124;
+}
+
+.hidden {
+    display:none;
+}
+.small-select {
+    width: 150px;
+}

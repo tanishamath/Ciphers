@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoalphabetic Cipher</title>
+    <link rel="stylesheet" href="cipher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Italiana&family=Major+Mono+Display&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <br>
+  <h1 class="text-light text-center"> Ciphers</h1>
+  <p class="lead text-light text-center">Choose the cipher that you wish to encrypt...</p>
+  
+    <section class="general text-center">
+        <div class="dropdown">
+            <button class="btn  btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose the cipher
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item " href="#Mono" onclick="selectTopic('Monoalphabetic')" class="text-primary">Monoalphabetic</a></li>
+              <li><a class="dropdown-item" href="#" onclick="selectTopic('Classic')">Classic</a></li>
+              <li><a class="dropdown-item" href="#Trans" onclick="selectTopic('Transposition')">Transposition</a></li>
+              <li><a class="dropdown-item" href="#" onclick="selectTopic('Modern')">Modern</a></li>
+            </ul>
+          </div>
+    </section>
+    <br>
+    <section id="Mono" class="text-center ">
+        <h1 class="text-light "> Monoalphabetic </h1>
+        <br>
+        <h2 class="text-light">Custom Key Cipher</h2>
+        <div class="form-group text-light">
+            <label for="key">Key (26 unique alphabet characters):</label>
+            <input type="text" id="key" maxlength="26">
+        </div>
+        <br>
+
+        <div>
+            <textarea id="inputText" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+        </div>
+        <br>
+        <button type="button" class="btn btn-outline-warning" onclick="encrypt()">Encrypt</button>
+        <button type="button" class="btn btn-outline-warning" onclick="decrypt()">Decrypt</button>
+        <br> <br>
+        <textarea id="outputText" rows="4" cols="50" placeholder="Result will be shown here..." readonly></textarea>
+
+    </section>
+    <br>
+    <br>
+    <section id="Trans" class="text-center ">
+      <h1 class="text-light">Columnar Transposition</h1>
+      <br>
+
+      
+      <div class="form-group text-light">
+          <label for="transKey">Key (Word for permutation):</label>
+          <input  type="text" id="transKey" >
+      </div>
+      <br>
+      <div class="m-5">
+        <div class="m-5">
+          <div class="m-5">
+            <div class="m-5">
+              <div class="m-5">
+                <div class="form-group text-light">
+                  <label for="transMode">Mode:</label>
+                  <select id="transMode" class="form-control small-select">
+                      <option value="encrypt">Encrypt</option>
+                      <option value="decrypt">Decrypt</option>
+                  </select>
+                </div>
+          
+              </div>
+          
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+      
+
+      <div>
+          <textarea id="transMessage" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+      </div>
+      <br>
+      <button type="button" class="btn btn-outline-warning" onclick="processTransposition()">Process</button>
+      <br><br>
+      <textarea id="transResult" rows="4" cols="50" placeholder="Result will be shown here..." readonly></textarea>
+      <br>
+      <a href="http://127.0.0.1:5500/cipher/main.html"><button type="button" class="btn btn-outline-warning">Go back to the previous page</button></a>
+      <br>
+  </section>
+
+    
+    
+    
+   
+
+    <script src="cipher.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

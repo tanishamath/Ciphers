@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #020202;
+  margin: 0;
+  padding: 0;
+  
+  background-image: url('peakpx.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  
+  color: #f0f0f0;
+  
+  
+  height: 100%;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  
+}
+
+
+nav {
+  background-color: #560678;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  
+  color: #8e60d7;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  
+    font-family: "Sirin Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+
+  
+}
+
+section {
+  padding: 20px;
+ 
+  font-family: "Caveat", cursive;
+  font-size:x-large;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+header {
+  font-size: larger;
+  color: #f0f0f0;
+  padding: 20px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+main {
+  padding: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 20px 0;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.button1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f9dc01;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: #555;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+li {
+  margin-bottom: 10px;
+  width: 50%; 
+  box-sizing: border-box; 
+  padding: 0 10px; 
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ae92f0;
+  color: white;
+  border:#560678;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+button:hover {
+  background-color: #48236b;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  box-sizing: border-box; 
+}
+
+#what-are-ciphers h2, #what-are-ciphers p, #what-are-ciphers ol {
+  text-align: center;
+}
+
+#types-of-ciphers {
+  height: auto;
+}
+
+#uses-of-cipher {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#uses-of-cipher li {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#advantages-disadvantages {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#advantages-disadvantages > div {
+  flex: 1;
+  padding: 20px;
+}
+
+#advantages-disadvantages .advantages {
+  flex: 1;
+  padding: 20px;
+}
+
+#advantages-disadvantages .disadvantages {
+  flex: 1;
+  padding: 20px;
+}
+

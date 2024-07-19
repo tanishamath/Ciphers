@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ciphers</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Italiana&family=Major+Mono+Display&family=Sirin+Stencil&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#what-are-ciphers">What are Ciphers?</a></li>
+                <li><a href="#types-of-ciphers">Types of Ciphers</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#get-started">Get Started</a></li>
+            </ul>
+        </nav>
+        <h1 id="welcome"><b><u>Welcome to Ciphers</u></b></h1>
+        <h3><i>by Tanisha & Riddhima</i></h3>
+        <img src="Data-Encryption-Descryption-1024x631.jpg" alt="" height="300 rem">
+    </header>
+    <main>
+        <section id="what-are-ciphers" >
+            <h2><u>What are Ciphers?</u></h2>
+            <p>Ciphers are essentially the secret recipes used for encryption and decryption. They're sets of rules that transform readable plain text into an unreadable jumble (ciphertext) and back again</p>
+            <br>
+            
+            <div id="uses-of-cipher">
+                <h2>Uses of Cipher</h2>
+                
+                <ol>
+                    <li>Confidentiality: Ciphers ensure only authorized parties can understand messages. They're crucial for secure communication in emails, online banking, and messaging apps.</li>
+                    <li>Data Storage: Encrypting sensitive data on hard drives or in the cloud protects it from unauthorized access in case of breaches.</li>
+                </ol>
+            </div>
+            <div id="advantages-disadvantages">
+                <div>
+                    <h2>Advantages:</h2>
+                    <p>
+                        <b>Security:</b> Strong ciphers make encrypted data extremely difficult to crack, safeguarding privacy.
+                        <br>
+                        <br>
+                        <b>Integrity:</b> Some ciphers can detect if data has been tampered with during transmission or storage.
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <h2>Disadvantages:</h2>
+                    <p>
+                        <b>Complexity:</b> Implementing strong ciphers can be computationally expensive, slowing down encryption and decryption processes.
+                        <br>
+                        <br>
+                        <b>Key Management:</b> Securely storing and distributing encryption keys is crucial. Losing a key could render data inaccessible.
+                        <br>
+                        <br>
+                        <b>Vulnerability:</b> While generally secure, ciphers can have weaknesses. New advancements in computing power or cryptanalysis techniques could potentially break some ciphers in the future.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+        
+       
+        <section id="types-of-ciphers">
+            <h2><b><u>Types of Ciphers</u></b></h2>
+            <h3><b><u>Monoalphabetic Cipher</u></b></h3>
+            <p>Each letter in the plaintext is replaced with a fixed different letter from the alphabet. This type of cipher is simple but can be easily broken with frequency analysis.</p>
+            <h3><b><u>Classic Cipher</u></b></h3>
+            <p>These are traditional encryption methods, such as the Caesar cipher and the Vigenère cipher, which use basic techniques for transforming text. They are historically significant but less secure by modern standards.</p>            
+            <h3><b><u>Transposition Cipher</u></b></h3>
+            <p>Transposition ciphers rearrange the letters of the plaintext to create the ciphertext. This can be done by writing the message in a grid and reading columns in a certain order. This method focuses on permutation rather than substitution.</p>
+            <h3><b><u>Modern Cipher</u></b></h3>
+            <p>These use complex algorithms for encryption, such as AES (Advanced Encryption Standard) and RSA. They provide high levels of security and are widely used in contemporary digital communications.</p> 
+       </section>
+       
+       <section id="quiz">
+            <h2><u><b>Before You Start...</b></u></h2>
+            <h3><i>Simplest cipher to crack is?</i></h3>
+            <ul id="options">
+                <li><button onclick="checkAnswer('Caesar')">Caesar Cipher</button></li>
+                <br>
+                <li><button onclick="checkAnswer('Substitution')">Substitution Cipher</button></li>
+                <br>
+                <li><button onclick="checkAnswer('Vigenère')">Vigenère Cipher</button></li>
+                <br>
+                <li><button onclick="checkAnswer('Enigma')">Enigma Cipher</button></li>
+                <br>
+            </ul>
+            <p id="result"></p>
+       </section>
+
+       <section id="get-started">
+            <button onclick="getStarted()">Get Started</button>
+       </section>
+    </main>
+    
+    <script src="main.js"></script>
+   
+    
+</body>
+</html>
